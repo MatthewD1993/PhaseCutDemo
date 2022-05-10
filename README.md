@@ -15,3 +15,13 @@
  <p align="center">
   <img src="./data/output.gif" />
 </p>
+
+
+## Stats shown
+ <p align="center">
+  <img src="./data/timeline_chart.png" width=400/>
+</p>
+
+ <p align="center">
+  <img src="./data/pie_chart.png" width=400/>
+</p>

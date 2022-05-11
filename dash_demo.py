@@ -23,11 +23,22 @@ pie_fig.update_traces(hoverinfo='label+percent', texttemplate="%{value:.3f}s <br
 # fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
 
 app.layout = html.Div(children=[
-    html.H1(children='Cami is a FOOL!', style={'textAlign': 'center'}),
+    html.H1(children='PhaseCut', style={'textAlign': 'center'}),
 
-    html.Div(children='''
-        PhaseCut: Analysis of Phase Cut Result.
-    ''', style={'textAlign': 'center'}),
+    html.Div(html.P(['PhaseCut: ',
+    html.A("Github Page", href='https://github.com/MatthewD1993/PhaseCutDemo/tree/dash_dev'),
+    html.Br(), 
+    '  This is the result of phase time analysis with computer vision.', 
+    html.Br(), 
+    'In this demo, I apply object detection and hand pose model on a pre-recorded video.',
+    html.Br(), 
+    'Action is thus recognized and result demostrated in the following figures:',
+    ]),
+    style={ 'margin': "5%"}
+    ),
+
+    
+
 
     dcc.Graph(
         id='timeline-graph',

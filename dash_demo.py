@@ -1,4 +1,4 @@
-
+from ctypes import alignment
 from dash import Dash, html, dcc
 import plotly.express as px
 import pandas as pd
@@ -23,11 +23,11 @@ pie_fig.update_traces(hoverinfo='label+percent', texttemplate="%{value:.3f}s <br
 # fig = px.bar(df, x="Fruit", y="Amount", color="City", barmode="group")
 
 app.layout = html.Div(children=[
-    html.H1(children='Hello Dash'),
+    html.H1(children='Cami is a FOOL!', style={'textAlign': 'center'}),
 
     html.Div(children='''
-        Dash: A web application framework for your data.
-    '''),
+        PhaseCut: Analysis of Phase Cut Result.
+    ''', style={'textAlign': 'center'}),
 
     dcc.Graph(
         id='timeline-graph',
